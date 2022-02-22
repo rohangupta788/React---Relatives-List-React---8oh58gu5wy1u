@@ -1,15 +1,24 @@
 import React from "react";
+import ListItem from "./ListItem";
 
-class List extends React.Component{
-    constructor(props){
-        super(props);
-    }
+function List(props){
 
-    render(){
+    const family = ["Rohan","Rahul","Shailesh","Akash"];
+
+        function addkey(index){
+         const key=`relativeListItem${index +1}`;
+         return key;
+        }
         return(
-            <li key={this.props.key}>{this.props.name}</li>
+            <ol type="1">
+                   {
+                    family.map((member,index)=>(
+                        <ListItem name={member} key = {addkey(index)} />
+                    ))
+                   }
+                   </ol>
         )
-    }
+    
 }
 
 export default List;
