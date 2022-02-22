@@ -3,17 +3,13 @@ import ListItem from "./ListItem";
 
 function List(props){
 
-    const family = ["Rohan","Rahul","Shailesh","Akash"];
+    const family = [{id:1,member:"Rohan"},{id:2,member:"golu"},{id:3,member:"Kishu"},{id:4,member:"Guddan"}];
 
-        function addkey(index){
-         const key=`relativeListItem${index +1}`;
-         return key;
-        }
         return(
             <ol type="1">
                    {
-                    family.map((member,index)=>(
-                        <ListItem name={member} key = {addkey(index)} />
+                    family.map((fam)=>(
+                        <ListItem name={fam.member} key = {fam.id} />
                     ))
                    }
                    </ol>
