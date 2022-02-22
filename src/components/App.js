@@ -5,10 +5,10 @@ import List from "./List";
 
 
 function App() {
-        
+        const keyvalue= `relativeList`;
         return(
             <div id="main">
-              <List key={"relativeList"} />
+              <List key={keyvalue} />
             </div>
         )
     
