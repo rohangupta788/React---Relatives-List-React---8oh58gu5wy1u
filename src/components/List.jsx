@@ -7,7 +7,7 @@ class List extends React.Component{
 
     render(){
         return(
-            <li>{this.props.name}</li>
+            <li key={this.props.key}>{this.props.name}</li>
         )
     }
 }
