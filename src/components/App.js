@@ -8,7 +8,7 @@ function App() {
         
         return(
             <div id="main">
-              <List key="relativeList" />
+              <List key={"relativeList"} />
             </div>
         )
     
