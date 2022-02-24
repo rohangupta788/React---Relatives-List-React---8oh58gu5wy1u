@@ -1,17 +1,19 @@
-import React from "react";
+import React, {Component, useState} from "react";
 import '../styles/App.css';
-import List from "./List";
 
+class App extends Component {
+    render() {
 
-
-function App() {
-        const keyvalue= `relativeList`;
         return(
             <div id="main">
-              <List key={keyvalue} />
+               <ol key="relativeList">
+            <li key="relativeListItem1">Saurabh</li>
+            <li key="relativeListItem2">Deepmani</li>
+            <li key="relativeListItem3">Chandra</li>
+            </ol>
             </div>
         )
-    
+    }
 }
 
 
